@@ -32,8 +32,11 @@ Example: isAdult(21) should return 'Adult'.
 
 Complete the exercise in the space below:
 */
-const isAdult=()=>{
-
+const isAdult=(age )=>{
+    if (age=>18)
+        return "adult"
+    else
+        return "minor"
     }
 
 
@@ -55,7 +58,12 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-
+const isCharAVowel=(x )=>{
+    if (x==="a"||x==="o"||x==="e")
+        return true
+    else 
+        return false
+}
 
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
@@ -75,6 +83,9 @@ should return 'johnsmith@example.com'.
 
 Complete the exercise in the space below:
 */
+const generateEmail=(a,b)=>{
+    return (a+"@"+b)
+}
 
 
 
@@ -95,7 +106,9 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-
+const greetUser=(a,b)=>{
+    return (`good ${b} ${a}`)
+}
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
@@ -111,8 +124,15 @@ Example: maxOfThree(17, 4, 9) should return 17.
 
 Complete the exercise in the space below:
 */
-
-
+const maxOfThree=(a,b,c)=>{
+    // if (a>=b&&a>=c)
+    //     return a
+    // if (b>=a&&b>=c)
+    //     return b
+    // else 
+    //     return c
+   return Math.max(a,b,c);
+}
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
 
@@ -129,7 +149,9 @@ Example: calculateTip(50, 20) should return 10.
 
 Complete the exercise in the space below:
 */
-
+const calculateTip=(a,b)=>{
+    return a*(b/100)
+}
 
 
 console.log('Exercise 7 Result:', calculateTip(50, 20));
@@ -149,7 +171,12 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 
 Complete the exercise in the space below:
 */
-
+const convertTemperature=(a,b)=>{
+    if (b==='C') 
+        return (a * 9/5) + 32;
+    if (b==='F')
+        return (temperature - 32) * 5/9;
+}
 
 
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
@@ -173,7 +200,17 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-
+const basicCalculator=(a,b,c)=>{
+    var d
+    if(c==='add')
+      d=a+b
+    if(c==='subtract')
+        d=a-b
+    if(c==='multiply')
+        d=a*b
+    if(c==='divide')
+        d=a/b
+}
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
